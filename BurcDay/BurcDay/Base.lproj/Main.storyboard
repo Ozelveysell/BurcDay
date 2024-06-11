@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LOM-12-bBD">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Burç Yorumları-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BurcDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BurçDay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0j3-oz-6Da">
+                                <rect key="frame" x="0.0" y="103" width="393" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="MEU-JE-rNX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KUg-P9-axz">
+                                <rect key="frame" x="5" y="153" width="383" height="616"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NoY-As-zgo">
+                                    <size key="itemSize" width="127" height="185"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HoroscopeCell" id="V7j-AF-dau" customClass="BurcCollectionViewCell" customModule="BurcDay" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="127" height="185"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="sEd-du-g9V">
+                                            <rect key="frame" x="0.0" y="0.0" width="127" height="185"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="330-Jz-c96">
+                                                    <rect key="frame" x="0.0" y="0.0" width="127" height="127"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUs-L7-J8w">
+                                                    <rect key="frame" x="6" y="156" width="109" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTK-vv-VUt">
+                                                    <rect key="frame" x="6" y="135" width="109" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="127" height="185"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="330-Jz-c96" id="wij-NF-iBk"/>
+                                            <outlet property="labelDate" destination="uUs-L7-J8w" id="bjo-yG-rNK"/>
+                                            <outlet property="labelName" destination="dTK-vv-VUt" id="Fqd-oT-hZ9"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KUg-P9-axz" firstAttribute="top" secondItem="0j3-oz-6Da" secondAttribute="bottom" constant="10" id="764-1y-JV0"/>
+                            <constraint firstItem="KUg-P9-axz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="ChH-eR-hxr"/>
+                            <constraint firstItem="0j3-oz-6Da" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ELQ-hY-KMu"/>
+                            <constraint firstItem="0j3-oz-6Da" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aZh-E4-hgM"/>
+                            <constraint firstItem="0j3-oz-6Da" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dHo-sE-okh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KUg-P9-axz" secondAttribute="trailing" constant="5" id="feG-iG-zN6"/>
+                            <constraint firstItem="KUg-P9-axz" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="yvO-kb-j25"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Burç Yorumları" image="book" catalog="system" id="p44-UR-ORm"/>
+                    <navigationItem key="navigationItem" style="editor" id="MqJ-sr-HgI"/>
+                    <connections>
+                        <outlet property="collectionView" destination="KUg-P9-axz" id="GZp-Eb-U6O"/>
+                        <outlet property="titleLabel" destination="0j3-oz-6Da" id="1H1-PV-Kq4"/>
+                        <segue destination="hPw-xh-9PU" kind="show" identifier="toHoroscopeVC" id="5PE-fp-LgI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1980.916030534351" y="3.5211267605633805"/>
+        </scene>
+        <!--Burç Yorumları-->
+        <scene sceneID="2t8-qN-7Ry">
+            <objects>
+                <viewController id="hPw-xh-9PU" customClass="HoroscopeViewController" customModule="BurcDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A9j-0r-dcN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeR-57-dj6">
+                                <rect key="frame" x="16" y="116" width="114" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="TWM-q4-yvS"/>
+                                    <constraint firstAttribute="height" constant="53" id="twi-tT-P9u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWY-nk-3JT">
+                                <rect key="frame" x="4" y="179" width="74" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="0Qj-bu-BPv"/>
+                                    <constraint firstAttribute="width" constant="74" id="Qh5-nd-Tdt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Günlük" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4e9-h8-zQa">
+                                <rect key="frame" x="82" y="179" width="74" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="qqd-2O-nkd"/>
+                                    <constraint firstAttribute="height" constant="21" id="r0g-sR-Od5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haftalık" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEj-Rm-hLk">
+                                <rect key="frame" x="160" y="179" width="74" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ehA-PC-wAX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aylık" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqP-dw-ScJ">
+                                <rect key="frame" x="238" y="179" width="74" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="H3k-6Y-xnU"/>
+                                    <constraint firstAttribute="height" constant="21" id="yPJ-ex-YwZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yıllık" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcx-N0-04k">
+                                <rect key="frame" x="316" y="179" width="74" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="Qa7-Yo-wsF"/>
+                                    <constraint firstAttribute="height" constant="21" id="qAS-BL-j1S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="384-TW-Thw">
+                                <rect key="frame" x="10" y="212" width="373" height="640"/>
+                                <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="640" id="xnh-t4-Ct3"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5W1-7l-4fE">
+                                <rect key="frame" x="309" y="107" width="68" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="PDW-ah-514"/>
+                                    <constraint firstAttribute="height" constant="68" id="S6w-2y-Gft"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haftalık" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyX-HX-0wc">
+                                <rect key="frame" x="135" y="148" width="169" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Lfe-PG-yUX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JIH-1s-j5p"/>
+                        <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="384-TW-Thw" firstAttribute="leading" secondItem="JIH-1s-j5p" secondAttribute="leading" constant="10" id="0kg-cM-qLg"/>
+                            <constraint firstItem="4e9-h8-zQa" firstAttribute="leading" secondItem="tWY-nk-3JT" secondAttribute="trailing" constant="4" id="2GE-Xm-HMj"/>
+                            <constraint firstItem="qqP-dw-ScJ" firstAttribute="leading" secondItem="XEj-Rm-hLk" secondAttribute="trailing" constant="4" id="2sQ-eu-l6h"/>
+                            <constraint firstItem="nyX-HX-0wc" firstAttribute="leading" secondItem="qeR-57-dj6" secondAttribute="trailing" constant="5" id="391-c3-SAz"/>
+                            <constraint firstAttribute="bottom" secondItem="384-TW-Thw" secondAttribute="bottom" id="39P-lq-8tK"/>
+                            <constraint firstItem="tWY-nk-3JT" firstAttribute="top" secondItem="qeR-57-dj6" secondAttribute="bottom" constant="10" id="6zl-lx-TCR"/>
+                            <constraint firstItem="JIH-1s-j5p" firstAttribute="trailing" secondItem="384-TW-Thw" secondAttribute="trailing" constant="10" id="8vb-1y-i5o"/>
+                            <constraint firstItem="384-TW-Thw" firstAttribute="top" secondItem="4e9-h8-zQa" secondAttribute="bottom" constant="12" id="B9m-ku-qc1"/>
+                            <constraint firstItem="XEj-Rm-hLk" firstAttribute="leading" secondItem="4e9-h8-zQa" secondAttribute="trailing" constant="4" id="E6w-3o-euH"/>
+                            <constraint firstItem="tWY-nk-3JT" firstAttribute="leading" secondItem="JIH-1s-j5p" secondAttribute="leading" constant="4" id="EOv-XL-8AC"/>
+                            <constraint firstItem="qeR-57-dj6" firstAttribute="leading" secondItem="JIH-1s-j5p" secondAttribute="leading" constant="16" id="GKl-SJ-4Gr"/>
+                            <constraint firstItem="384-TW-Thw" firstAttribute="top" secondItem="qqP-dw-ScJ" secondAttribute="bottom" constant="12" id="Vkh-oD-hqI"/>
+                            <constraint firstItem="384-TW-Thw" firstAttribute="top" secondItem="bcx-N0-04k" secondAttribute="bottom" constant="12" id="XgM-kH-KjG"/>
+                            <constraint firstItem="384-TW-Thw" firstAttribute="top" secondItem="XEj-Rm-hLk" secondAttribute="bottom" constant="12" id="Ymc-8k-ivS"/>
+                            <constraint firstItem="384-TW-Thw" firstAttribute="top" secondItem="tWY-nk-3JT" secondAttribute="bottom" constant="12" id="Yxu-f1-8wq"/>
+                            <constraint firstItem="JIH-1s-j5p" firstAttribute="trailing" secondItem="bcx-N0-04k" secondAttribute="trailing" constant="3" id="bw0-A8-vkD"/>
+                            <constraint firstItem="bcx-N0-04k" firstAttribute="leading" secondItem="qqP-dw-ScJ" secondAttribute="trailing" constant="4" id="dhZ-Dp-quL"/>
+                            <constraint firstItem="5W1-7l-4fE" firstAttribute="leading" secondItem="nyX-HX-0wc" secondAttribute="trailing" constant="5" id="e84-6m-3ng"/>
+                            <constraint firstItem="bcx-N0-04k" firstAttribute="top" secondItem="5W1-7l-4fE" secondAttribute="bottom" constant="4" id="fZs-J9-DcU"/>
+                            <constraint firstItem="JIH-1s-j5p" firstAttribute="trailing" secondItem="5W1-7l-4fE" secondAttribute="trailing" constant="16" id="j0m-Qj-abr"/>
+                            <constraint firstItem="qqP-dw-ScJ" firstAttribute="top" secondItem="nyX-HX-0wc" secondAttribute="bottom" constant="10" id="u5y-Wu-xao"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Burç Yorumları" style="editor" id="vbW-7c-RWg"/>
+                    <connections>
+                        <outlet property="aylikLabelButton" destination="qqP-dw-ScJ" id="zWe-PS-24h"/>
+                        <outlet property="dateLabel" destination="nyX-HX-0wc" id="cNh-3J-LPN"/>
+                        <outlet property="explanationHoroscopeText" destination="384-TW-Thw" id="DId-Sp-ZXW"/>
+                        <outlet property="genelLabelButton" destination="tWY-nk-3JT" id="Ida-aG-duw"/>
+                        <outlet property="gunlukLabelButton" destination="4e9-h8-zQa" id="9Vn-2R-N0U"/>
+                        <outlet property="haftalikLabelButton" destination="XEj-Rm-hLk" id="SFn-DB-MYL"/>
+                        <outlet property="horoscopeTitle" destination="qeR-57-dj6" id="mTU-Ak-oHe"/>
+                        <outlet property="imageView" destination="5W1-7l-4fE" id="JRT-uu-cY9"/>
+                        <outlet property="yillikLabelButton" destination="bcx-N0-04k" id="sOD-HS-IHn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ELc-Yf-k8D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2823.6641221374043" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eY8-xh-iSW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LOM-12-bBD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="65l-gX-z07">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VgN-jV-KwP" kind="relationship" relationship="rootViewController" id="Jck-dC-evf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1vl-mg-nFe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="cCe-iq-OHf">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="VgN-jV-KwP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="mH7-2d-Rvj"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JJd-Wc-NEu">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="fue-Pc-ReS"/>
+                        <segue destination="sH8-5D-xaJ" kind="relationship" relationship="viewControllers" id="oGe-80-Cz1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KPD-xC-x2C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054.1984732824426" y="3.5211267605633805"/>
+        </scene>
+        <!--Doğum Haritası-->
+        <scene sceneID="zeU-be-Gk4">
+            <objects>
+                <viewController id="sH8-5D-xaJ" customClass="NatalChartsViewController" customModule="BurcDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SKe-Je-CbA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sqy-cE-3Oz">
+                                <rect key="frame" x="5" y="133" width="383" height="626"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="S8h-kx-0GA">
+                                    <size key="itemSize" width="176" height="247"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="natalchartCell" id="81B-vz-E34" customClass="NatalChartCollectionViewCell" customModule="BurcDay" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="176" height="247"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="E5W-Rj-f97">
+                                            <rect key="frame" x="0.0" y="0.0" width="176" height="247"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I7J-72-bKq">
+                                                    <rect key="frame" x="0.0" y="0.0" width="176" height="176"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRe-0a-mf6">
+                                                    <rect key="frame" x="12" y="218" width="152" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nop-NH-TNR">
+                                                    <rect key="frame" x="12" y="191" width="152" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="176" height="247"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="I7J-72-bKq" id="jWy-xr-WH5"/>
+                                            <outlet property="labelHoroscope" destination="bRe-0a-mf6" id="YlE-OS-3hM"/>
+                                            <outlet property="labelNatalChart" destination="Nop-NH-TNR" id="5Hv-FL-OSo"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BurçDay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jyw-Bb-nUS">
+                                <rect key="frame" x="0.0" y="85" width="393" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="dQv-Ac-iR4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CZ6-g3-68e"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jyw-Bb-nUS" firstAttribute="trailing" secondItem="CZ6-g3-68e" secondAttribute="trailing" id="ZOY-o6-uMk"/>
+                            <constraint firstItem="jyw-Bb-nUS" firstAttribute="leading" secondItem="CZ6-g3-68e" secondAttribute="leading" id="o2U-WG-CwX"/>
+                            <constraint firstItem="jyw-Bb-nUS" firstAttribute="top" secondItem="SKe-Je-CbA" secondAttribute="top" constant="85" id="oJn-Ih-z37"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Doğum Haritası" image="map" catalog="system" landscapeImage="dogumharitaicon" id="GRm-VJ-IwG"/>
+                    <connections>
+                        <outlet property="collectionView2" destination="sqy-cE-3Oz" id="egj-LU-rJZ"/>
+                        <segue destination="ZJg-Rh-MP5" kind="show" identifier="toNatalDetailsVC" id="2hM-PE-w0o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uCI-tu-67k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810" y="724"/>
+        </scene>
+        <!--Doğum Haritası-->
+        <scene sceneID="p1g-Gn-ZzU">
+            <objects>
+                <viewController id="ZJg-Rh-MP5" customClass="NatalChartDetailViewController" customModule="BurcDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6um-h4-pYr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AM5-QY-h1B">
+                                <rect key="frame" x="10" y="178" width="373" height="640"/>
+                                <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="640" id="I3i-h4-aL9"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cRo-9E-lTT">
+                                <rect key="frame" x="293" y="88" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="9tI-Nn-A5A"/>
+                                    <constraint firstAttribute="height" constant="80" id="cZy-L9-drR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9D-i2-A9X">
+                                <rect key="frame" x="15" y="115" width="200" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="8TZ-6j-LDd"/>
+                                    <constraint firstAttribute="width" constant="200" id="XdD-WG-kPu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2ip-3A-374"/>
+                        <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2ip-3A-374" firstAttribute="trailing" secondItem="cRo-9E-lTT" secondAttribute="trailing" constant="20" id="EZ9-Cz-4jV"/>
+                            <constraint firstItem="AM5-QY-h1B" firstAttribute="top" secondItem="X9D-i2-A9X" secondAttribute="bottom" constant="10" id="KRA-Ug-oiI"/>
+                            <constraint firstAttribute="trailing" secondItem="AM5-QY-h1B" secondAttribute="trailing" constant="10" id="OzJ-cl-t2h"/>
+                            <constraint firstItem="AM5-QY-h1B" firstAttribute="top" secondItem="cRo-9E-lTT" secondAttribute="bottom" constant="10" id="lVV-5k-rtG"/>
+                            <constraint firstItem="AM5-QY-h1B" firstAttribute="bottom" secondItem="2ip-3A-374" secondAttribute="bottom" id="mbM-HQ-4TN"/>
+                            <constraint firstItem="AM5-QY-h1B" firstAttribute="leading" secondItem="2ip-3A-374" secondAttribute="leading" constant="10" id="tVi-pu-x20"/>
+                            <constraint firstItem="X9D-i2-A9X" firstAttribute="leading" secondItem="2ip-3A-374" secondAttribute="leading" constant="15" id="w4w-kX-IdI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Doğum Haritası" style="editor" id="dPO-do-qlD"/>
+                    <connections>
+                        <outlet property="imageView" destination="cRo-9E-lTT" id="ylV-HP-Vla"/>
+                        <outlet property="textView" destination="AM5-QY-h1B" id="49r-Jd-jXg"/>
+                        <outlet property="title2" destination="X9D-i2-A9X" id="laJ-DK-ze7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aeF-ds-pck" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2823.6641221374043" y="698.59154929577471"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book" catalog="system" width="128" height="99"/>
+        <image name="dogumharitaicon" width="474" height="474"/>
+        <image name="map" catalog="system" width="128" height="112"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
